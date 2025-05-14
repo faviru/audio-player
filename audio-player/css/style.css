@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 10px;
+  padding: 30px 10px 20px 10px;
   overflow: hidden;
   box-sizing: border-box;
   background: linear-gradient(var(--light-bg), var(--dark-bg));
@@ -177,9 +177,37 @@ label[for="show-volume"] {
 .controls--sub {
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .volume__container {
   display: flex;
   gap: 5px;
+}
+
+a {
+  font-size: 0.9em;
+  text-decoration: none;
+  color: var(--regular-color);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.rss-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+footer>* {
+  display: flex;
+  align-items: center;
+}
+
+.author__container {
+  font-size: 0.9em;
 }
